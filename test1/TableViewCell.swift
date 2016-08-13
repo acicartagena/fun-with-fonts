@@ -10,6 +10,17 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    @IBOutlet weak var descriptionLabel: Label! {
+        didSet {
+            descriptionLabel.textStyle = .body
+        }
+    }
+    @IBOutlet weak var titleLabel: Label! {
+        didSet {
+            titleLabel.textStyle = .title1
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +31,7 @@ class TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    static let reuseIdentifier: String = "TableViewCell"
 
 }

@@ -12,6 +12,10 @@
 		603BD67F1D5EA5AB00616245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 603BD67D1D5EA5AB00616245 /* Main.storyboard */; };
 		603BD6811D5EA5AB00616245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 603BD6801D5EA5AB00616245 /* Assets.xcassets */; };
 		603BD6841D5EA5AB00616245 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 603BD6821D5EA5AB00616245 /* LaunchScreen.storyboard */; };
+		603BD68C1D5EA60200616245 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603BD68B1D5EA60200616245 /* TableViewCell.swift */; };
+		603BD68E1D5EA8CC00616245 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603BD68D1D5EA8CC00616245 /* Label.swift */; };
+		603BD6941D5EA9CA00616245 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603BD6931D5EA9CA00616245 /* Font.swift */; };
+		603BD6961D5EB92500616245 /* OsgoodSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 603BD6951D5EB92500616245 /* OsgoodSans-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		603BD6801D5EA5AB00616245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		603BD6831D5EA5AB00616245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		603BD6851D5EA5AB00616245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		603BD68B1D5EA60200616245 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		603BD68D1D5EA8CC00616245 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		603BD6931D5EA9CA00616245 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		603BD6951D5EB92500616245 /* OsgoodSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OsgoodSans-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,12 @@
 			children = (
 				603BD6791D5EA5AB00616245 /* AppDelegate.swift */,
 				603BD67B1D5EA5AB00616245 /* ViewController.swift */,
+				603BD68B1D5EA60200616245 /* TableViewCell.swift */,
+				603BD68D1D5EA8CC00616245 /* Label.swift */,
+				603BD6931D5EA9CA00616245 /* Font.swift */,
 				603BD67D1D5EA5AB00616245 /* Main.storyboard */,
 				603BD6801D5EA5AB00616245 /* Assets.xcassets */,
+				603BD6951D5EB92500616245 /* OsgoodSans-Regular.ttf */,
 				603BD6821D5EA5AB00616245 /* LaunchScreen.storyboard */,
 				603BD6851D5EA5AB00616245 /* Info.plist */,
 			);
@@ -125,6 +137,7 @@
 				603BD6841D5EA5AB00616245 /* LaunchScreen.storyboard in Resources */,
 				603BD6811D5EA5AB00616245 /* Assets.xcassets in Resources */,
 				603BD67F1D5EA5AB00616245 /* Main.storyboard in Resources */,
+				603BD6961D5EB92500616245 /* OsgoodSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				603BD68C1D5EA60200616245 /* TableViewCell.swift in Sources */,
 				603BD67C1D5EA5AB00616245 /* ViewController.swift in Sources */,
+				603BD6941D5EA9CA00616245 /* Font.swift in Sources */,
+				603BD68E1D5EA8CC00616245 /* Label.swift in Sources */,
 				603BD67A1D5EA5AB00616245 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

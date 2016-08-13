@@ -8,14 +8,30 @@
 
 import UIKit
 
+
 class Label: UILabel {
-
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
     }
-    */
-
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        commonInit()
+    }
+    
+    var textStyle: TextStyle = .body {
+        didSet {
+            font = UIFont(textStyle: textStyle)
+        }
+    }
+    
+    func commonInit() {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(Label.didChangePreferredContentSize), name: UIContentSizeCategoryDidChangeNotification, object: nil)
+    }
+    
+    func didChangePreferredContentSize() {
+        font = UIFont(textStyle: textStyle)
+    }
 }
